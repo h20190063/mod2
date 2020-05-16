@@ -1,0 +1,102 @@
+
+/************************ Base Styles ********************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+h1{
+	text-align: center;
+	margin: 25px;
+}
+
+
+/***************** Section Titles **************/
+
+h2{
+	width: 150px;
+	text-align: center;
+	float: right;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3px;
+}
+
+#title1 {
+	background-color: #DEB887;
+}
+#title2 {
+  background-color: #A52A2A;
+  color: white;
+}
+#title3 {
+  background-color: #5F9EA0;
+}
+
+
+/************ Section *************/
+
+p{
+	clear: right;
+	margin: 5px;
+	padding: 5px;
+}
+
+section{
+	position: relative;
+	background-color: grey;
+	border: 1px solid black;
+	float: left;
+	margin: 1%;
+	height: 150px;
+	overflow: hidden;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/****************** Desktop View(>= 992px) ***************/
+
+@media(min-width: 992px){
+
+  .col-lg {
+  	float: left;
+    width: 31.3%;
+  }
+}
+
+/****************** Tablet View(768px - 991px) ***************/
+
+@media(min-width: 768px) and (max-width: 991px){
+  
+  section{
+  	float: left;
+  	width: 48%
+  }
+  
+
+  .col-mid-2{
+  	float: left;
+  	width: 98%
+  }
+
+}
+
+/****************** Mobile View(<= 767px) ***************/
+
+@media(max-width: 767px){
+  
+  .col-sm {
+    width: 100%;
+  }
+
+}
